@@ -1,7 +1,6 @@
 {
   "name": "day-01",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "eslint . && jest --coverage",
@@ -23,5 +22,14 @@
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-react": "^7.9.1",
     "jest": "^23.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashtonkellis/data-structures-and-algorithms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashtonkellis/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/ashtonkellis/data-structures-and-algorithms#readme",
+  "description": ""
 }
