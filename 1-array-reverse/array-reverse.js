@@ -9,5 +9,3 @@ function reverseArray(inputArr) {
 
   return outputArr;
 }
-
-console.log(reverseArray([1, 2, 3]));
