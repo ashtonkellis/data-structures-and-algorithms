@@ -1,6 +1,14 @@
 'use strict';
 
 const largestProduct = module.exports = (matrix) => { // eslint-disable-line
+  if (matrix.reduce((acc, cur) => acc.concat(cur), []).some(e => typeof e !== 'number')) {
+    throw new Error('Matrix must contain only numbers');
+  }
+
+  if (matrix.map(row => row.length).some((num, i, w) => num !== w[0])) {
+    throw new Error('All rows must be of the same length');
+  }
+
   let maxValue = 0;
 
   function fetchVal(x, y) {
@@ -10,10 +18,6 @@ const largestProduct = module.exports = (matrix) => { // eslint-disable-line
     if (y > matrix[0].length - 1) return 0;
 
     return matrix[x][y];
-  }
-
-  if (matrix.reduce((acc, cur) => acc.concat(cur), []).some(e => typeof e !== 'number')) {
-    throw new Error('Matrix must contain only numbers');
   }
 
   for (let i = 0; i < matrix.length; i++) {
