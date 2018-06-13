@@ -1,3 +1,5 @@
+'use strict';
+
 function reverseArray(inputArr) {
   const n = inputArr.length;
   const outputArr = new Array (n);
