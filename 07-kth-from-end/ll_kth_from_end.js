@@ -29,6 +29,7 @@ module.exports = class LinkedList {
   }
 
   kthFromEnd(k) {
-    
+    this.k = k;
+    return k;
   }
 };
