@@ -28,8 +28,25 @@ module.exports = class LinkedList {
     return this;
   }
 
-  kthFromEnd(k) {
-    this.k = k;
-    return k;
+  kthFromEnd(k) {    
+    if (!this.head) return null;
+    
+    let currentNode = this.head;
+    let endNode = this.head;
+
+    for (let i = 0; i < k; i++) {
+      if (endNode.next === null) return null;
+      endNode = endNode.next;
+    }
+
+    if (!endNode.next) return currentNode.value;
+
+    while (endNode.next) {
+      currentNode = currentNode.next;
+      endNode = endNode.next;
+      if (!endNode.next) return currentNode.value;
+    }
+
+    return null;
   }
 };
