@@ -1,7 +1,5 @@
 'use strict';
 
-'use strict';
-
 class Node {
   constructor(value) {
     this.value = value;
@@ -30,20 +28,22 @@ module.exports = class LinkedList {
     return this;
   }
 
-  static merge(linkedList1, linkedList2) {
-    let currentNode = linkedList1.head;
-    let incomingNode = linkedList2.head;
-  
-    linkedList2.head = incomingNode.next;
-    incomingNode.next = currentNode.next;
-    currentNode.next = incomingNode;
-
-    while (!linkedList2.head) {
-      currentNode = currentNode.next.next;
-      incomingNode.next = currentNode.next;
-      currentNode.next = incomingNode;
-    } 
+  shift() {
+    if (!this.head) return null;
     
-    // return linkedList1.head;
+    const firstNode = this.head;
+    this.head = firstNode.next;
+    return firstNode;
+  }
+
+  static merge(linkedList1, linkedList2) {
+    const mergedLL = new LinkedList();
+
+    while (linkedList1.head || linkedList2.head) {
+      if (linkedList1.head) mergedLL.append(linkedList1.shift().value);
+      if (linkedList2.head) mergedLL.append(linkedList2.shift().value);
+    }
+
+    return mergedLL;
   }
 };
