@@ -7,9 +7,6 @@ enqueue(value) which inserts value into the Queue using a first-in, first-out ap
 dequeue() which extracts a value from the Queue using a first-in, first-out approach.
 You have access to 2 Stack instances with push and pop methods.
 
-Structure and Testing
-Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm in one function definition.
-
 Write at least three test assertions for each method that you define.
 
 Ensure your tests are passing before you submit your solution.
@@ -24,14 +21,6 @@ Input	Output	Internal State
 [5]->[10]->[15]->[20]	20	[5]->[10]->[15])
 [5]->[10]->[15]	15	[5]->[10]
 Documentation: Your README.md
-# Implement a Queue using two Stacks.
-<!-- Short summary or background information -->
-
-## Challenge
-<!-- Description of the challenge -->
-
-## Solution
-<!-- Embedded whiteboard image -->
 
 Submission Instructions
 Take a photo of your completed whiteboard, matching the example whiteboard layout
