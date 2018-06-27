@@ -1,9 +1,4 @@
-Code Challenge
-First-in, First out Animal Shelter.
-
 Specifications
-Read all of the following instructions carefully. Name things exactly as described, or you will get a ZERO without comment
-Do all your work in a public repository called data-structures-and-algorithms, with a well-formated, detailed top level README.md matching the example provided by your instructor
 Create a branch in your repository called fifo_animal_shelter
 On your branch, create…
 C#: Create a method named FIFOAnimalShelter() outside of Main() in your Program.cs file. Call Your newly created method in Main() once complete.
