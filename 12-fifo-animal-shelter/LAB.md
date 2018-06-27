@@ -1,12 +1,3 @@
-Specifications
-Create a branch in your repository called fifo_animal_shelter
-On your branch, create…
-C#: Create a method named FIFOAnimalShelter() outside of Main() in your Program.cs file. Call Your newly created method in Main() once complete.
-JavaScript: a file called fifo_animal_shelter.js
-Python: a file called fifo_animal_shelter.py
-Include any language-specific configuration files required for this challenge to become an individual component, module, library, etc.
-NOTE: You can find an example of this configuration for your course in your class lecture repository.
-Feature Tasks
 Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
 Implement the following methods:
 enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
