@@ -1,2 +1,2 @@
-- link to PR:
+- link to PR: https://github.com/ashtonkellis/data-structures-and-algorithms/pull/16
 - time estimate: ~2 hours
