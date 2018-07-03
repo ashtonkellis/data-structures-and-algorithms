@@ -17,5 +17,3 @@ describe('Towers of Hanoi', () => {
     expect(testTOH).toBeInstanceOf(TowersOfHanoi);
   });
 });
-
-((()))
