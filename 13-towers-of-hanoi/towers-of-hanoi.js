@@ -6,10 +6,10 @@ module.exports = class TowersOfHanoi {
     this.stackB = [];
     this.stackC = [];
 
-    for (let i = 0; i < discQuantity; i++) {
-      this.stackA.unshift(i);
-    }
-    this.stacks = [this.stackC, this.stackB, this.stackA];
+    // for (let i = 0; i < discQuantity; i++) {
+    //   this.stackA.unshift(i);
+    // }
+    // this.stacks = [this.stackC, this.stackB, this.stackA];
   };
     
   // moveDiscs() {
