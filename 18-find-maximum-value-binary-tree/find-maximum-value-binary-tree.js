@@ -39,17 +39,19 @@ module.exports = class BinaryTree {
     }
   }
   
-  static FizzBuzzTree(tree) {
-    // console.log(JSON.stringify(tree, null, 2));
-    if (tree.root) BinaryTree.FizzBuzzTree(tree.root);
-    if (!tree.value) return tree;
+  static findMaximumValue(tree) {
+    if (tree.root) return BinaryTree.findMaximumValue(tree.root);
+    console.log(JSON.stringify(tree, null, 2));
     
-    if (tree.value % 3 === 0 && tree.value % 5 === 0) tree.value = 'fizzbuzz';
-    if (tree.value % 3 === 0) tree.value = 'fizz';
-    if (tree.value % 5 === 0) tree.value = 'buzz';
-    
-    if (tree.left) BinaryTree.FizzBuzzTree(tree.left);
-    if (tree.right) BinaryTree.FizzBuzzTree(tree.right);
-    return undefined;
+    if (!tree.left && !tree.right) return tree.value;
+
+    let left = -Infinity;
+    let right = -Infinity;
+
+    if (tree.left) left = BinaryTree.findMaximumValue(tree.left);
+    if (tree.right) right = BinaryTree.findMaximumValue(tree.right);
+
+    console.log(tree.value, left, right);
+    return Math.max(tree.value, left, right);
   }
 };
