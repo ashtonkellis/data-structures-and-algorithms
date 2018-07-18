@@ -1,22 +1,3 @@
-Code Challenge
-Find common values in 2 binary trees.
-
-Specifications
-Read all of the following instructions carefully. Name things exactly as described, or you will get a ZERO without comment
-Do all your work in a public repository called data-structures-and-algorithms, with a well-formated, detailed top level README.md matching the example provided by your instructor
-Create a branch in your repository called tree_intersection
-On your branch, create…
-C#: create a method named TreeIntersection outside of Main() in your Program.cs file. Call Your newly created method in Main() once complete.
-JavaScript: a file called tree_intersection.js
-Python: a file called tree_intersection.py
-Include any language-specific configuration files required for this challenge to become an individual component, module, library, etc.
-NOTE: You can find an example of this configuration for your course in your class lecture repository.
-Feature Tasks
-Write a function called tree_intersection that takes two binary tree parameters.
-Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
-Structure and Testing
-Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm in one function definition.
-
 Write at least three test assertions for each method that you define.
 
 Ensure your tests are passing before you submit your solution.
